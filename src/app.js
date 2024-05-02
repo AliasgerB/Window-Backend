@@ -31,7 +31,7 @@ app.post("/window", async (req, res) => {
     }
 
     let windowToUpdate = await Window.findOne({ Windowtype: windowType });
-
+    console.log(windowToUpdate);
     if (windowToUpdate) {
       windowToUpdate.Count += 1;
       windowToUpdate.Content = req.body.Content;
