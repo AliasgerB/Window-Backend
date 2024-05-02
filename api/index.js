@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-require("./src/db/connection");
+require("../src/db/connection");
 const cors = require("cors");
 
-const Window = require("./src/model/window");
+const Window = require("../src/model/window");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
