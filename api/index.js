@@ -49,7 +49,7 @@ app.post("/window", async (req, res) => {
   }
 });
 
-// Server Create
+// Server Created
 app.listen(port, () => {
   console.log(`server is running at ${port}`);
 });
