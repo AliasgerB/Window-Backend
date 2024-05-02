@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 // "mongodb+srv://rahuljainkgk:A6DVldfcOs1ahyB1@cluster0.cei7xy2.mongodb.net/aliDb"
 
 mongoose
-  .connect(
-    "mongodb+srv://bagaliasger53:swo6nEZvJODQinv9@cluster0.q3eb7yv.mongodb.net/testthird?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("connection successful...");
   })

@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 require("../src/db/connection");
 const cors = require("cors");
+require("dotenv").config();
 
 const Window = require("../src/model/window");
 app.use(express.json());
