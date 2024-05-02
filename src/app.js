@@ -24,7 +24,6 @@ app.get("/", async (req, res) => {
 app.post("/window", async (req, res) => {
   try {
     const windowType = req.body?.Windowtype;
-    // console.log(windowType);
     if (!windowType) {
       return res
         .status(400)
