@@ -8,6 +8,7 @@ const Window = require("../src/model/window");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Set Path
 const port = process.env.PORT || 8000;
 app.use(cors());
 
