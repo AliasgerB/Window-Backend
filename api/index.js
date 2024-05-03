@@ -22,6 +22,8 @@ app.get("/", async (req, res) => {
   }
 });
 
+app.get("/test", (req, res) => res.send("Express on Vercel"));
+
 app.post("/window", async (req, res) => {
   try {
     const windowType = req.body?.Windowtype;
